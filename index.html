@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>My Patients</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>My Patients</h1>
+			</div>
+		</header>
+		<main class="container">
+			<section>
+				<h2>My Patients</h2>
+				<table>
+					<tr>
+						<th>Name</th>
+						<th>Weight(kg)</th>
+						<th>Height(m)</th>
+						<th>MBI</th>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Leonardo</td>
+						<td class="info-weight">57</td>
+						<td class="info-height">1.67</td>
+						<td class="info-bmi"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Paulo</td>
+						<td class="info-weight">100</td>
+						<td class="info-height">2.00</td>
+						<td class="info-bmi"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Stuart</td>
+						<td class="info-weight">120</td>
+						<td class="info-height">1.80</td>
+						<td class="info-bmi"></td>
+					</tr>
+					<tr class="patient">
+						<td class="info-name">Rafael</td>
+						<td class="info-weight">110</td>
+						<td class="info-height">1.60</td>
+						<td class="info-bmi"></td>
+					</tr>
+				</table>
+				<button id="calculate-bmis" class="button ">Calculate BMI's</button>
+			</section>
+			<section>
+				<h2>Add new patient</h2>	
+				<form>
+					<fieldset>
+						<label for="name">Name:</label>
+						<input id="name-field" type="text" placeholder="Type the name of the patient">
+					</fieldset>
+					<fieldset class="medium-field">
+						<label for="weight">Weight:</label>
+						<input id="weight-field" type="text" placeholder="Type the weight of the patient">
+					</fieldset>
+					<fieldset class="medium-field">
+						<label for="height">Height:</label>
+						<input id="height-field" type="text" placeholder="Type the height of the patient">
+					</fieldset>
+					<button id="add-patient" class="button">Add</button>
+				</form>
+			</section>
+		</main>
+		<script src="assets/js/wander.js"></script>
+        <script src="assets/js/calculate-bmi.js"></script>
+        <script src="assets/js/add.js"></script>
+	</body>
+</html>
